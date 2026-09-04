@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Pet Care Passport</title>
+  <meta name="description" content="Get in touch with the Pet Care Passport team. We'd love to hear from you.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://petcarepassport.app/contact/">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="/" class="nav-brand" aria-label="Pet Care Passport home">
+        <img src="/img/logo.png" alt="" width="36" height="36">
+        Pet Care Passport
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="/#features">Features</a>
+        <a href="/#how-it-works">How It Works</a>
+        <a href="/#download">Download</a>
+        <a href="/contact/" class="nav-cta">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact -->
+  <main class="legal-page">
+    <div class="container">
+      <div class="legal-header">
+        <h1>Contact Us</h1>
+        <p class="section-subtitle">Have a question, feedback, or need support? We'd love to hear from you.</p>
+      </div>
+      <div class="contact-content">
+
+        <div class="contact-card">
+          <div class="contact-icon">&#9993;</div>
+          <h2>Email</h2>
+          <p>For general inquiries, support, or privacy-related questions:</p>
+          <a href="mailto:bendaooud@gmail.com" class="contact-link">bendaooud@gmail.com</a>
+        </div>
+
+        <div class="contact-info-grid">
+          <div class="contact-info-item">
+            <h3>Support</h3>
+            <p>Having trouble with the app? Send us an email describing the issue and we'll get back to you as soon as possible.</p>
+          </div>
+          <div class="contact-info-item">
+            <h3>Feedback</h3>
+            <p>We appreciate your feedback! Let us know what features you'd like to see or how we can improve Pet Care Passport.</p>
+          </div>
+          <div class="contact-info-item">
+            <h3>Privacy</h3>
+            <p>For data-related requests (access, deletion, or questions about your data), email us and we'll respond promptly.</p>
+          </div>
+        </div>
+
+        <div class="contact-developer">
+          <p><strong>Developer:</strong> Bendaoud Apps</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-brand-name">
+            <img src="/img/logo.png" alt="" width="32" height="32">
+            Pet Care Passport
+          </div>
+          <p>Your pet's health, organized in one simple place.</p>
+          <p style="margin-top:8px;">Bendaoud Apps</p>
+        </div>
+        <div class="footer-links">
+          <h4>Product</h4>
+          <a href="/#features">Features</a>
+          <a href="/#how-it-works">How It Works</a>
+          <a href="/#download">Download</a>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Service</a>
+          <a href="/contact/">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bendaoud Apps. All rights reserved.</span>
+        <span>Pet Care Passport is not a veterinary service.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var links = document.getElementById('navLinks');
+      var btn = document.querySelector('.nav-toggle');
+      var open = links.classList.toggle('open');
+      btn.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open);
+    }
+    document.querySelectorAll('.nav-links a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        document.getElementById('navLinks').classList.remove('open');
+        document.querySelector('.nav-toggle').classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
