@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Your Account | Pet Care Passport</title>
+  <meta name="description" content="Learn how to request deletion of your Pet Care Passport account and associated data.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://petcarepassport.app/delete-account/">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="/" class="nav-brand" aria-label="Pet Care Passport home">
+        <img src="/img/logo.png" alt="" width="36" height="36">
+        Pet Care Passport
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="/#features">Features</a>
+        <a href="/#how-it-works">How It Works</a>
+        <a href="/#download">Download</a>
+        <a href="/contact/" class="nav-cta">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Delete Account -->
+  <main class="legal-page">
+    <div class="container">
+      <div class="legal-header">
+        <h1>Delete Your Pet Care Passport Account</h1>
+      </div>
+      <div class="legal-content">
+
+        <p>Pet Care Passport, provided by <strong>Bendaoud Apps</strong>, allows users to request deletion of their account and associated data.</p>
+
+        <h2>How to Request Account Deletion</h2>
+        <p>You can delete your account directly within the Pet Care Passport app by going to <strong>Settings &gt; Delete Account</strong>.</p>
+        <p>Alternatively, to request deletion of your Pet Care Passport account, send an email to <a href="mailto:bendaooud@gmail.com">bendaooud@gmail.com</a> using the email address associated with your account. Include a clear request to delete your Pet Care Passport account.</p>
+        <p>Your request will be reviewed and processed by Bendaoud Apps. You will receive a confirmation once your account and data have been deleted.</p>
+
+        <h2>What Data Will Be Deleted</h2>
+        <p>When your account is deleted, all data associated with your account is removed from our servers, including:</p>
+        <ul>
+          <li>Your user profile (email address, display name, phone number, profile picture)</li>
+          <li>All pet profiles (name, species, breed, date of birth, weight, gender, photo)</li>
+          <li>Vaccination records</li>
+          <li>Medication records and adherence logs</li>
+          <li>Health documents (uploaded images and scanned documents)</li>
+          <li>Reminders</li>
+          <li>Emergency contact information</li>
+          <li>Family member and pet sitter sharing relationships</li>
+        </ul>
+
+        <h2>Data Retention</h2>
+        <p>Upon account deletion, your data is removed from the active database. Your data is stored using Supabase, a cloud database platform. While data is deleted from the production database upon request, standard cloud infrastructure backups may temporarily retain copies of deleted data before they are overwritten through normal backup rotation cycles.</p>
+        <p>Bendaoud Apps does not use retained backup data for any purpose after an account deletion request has been processed. No deleted data is shared with, sold to, or made available to any third party.</p>
+
+        <h2>Contact</h2>
+        <p><strong>Bendaoud Apps</strong></p>
+        <p>Email: <a href="mailto:bendaooud@gmail.com">bendaooud@gmail.com</a></p>
+        <p>Website: <a href="https://petcarepassport.app/">https://petcarepassport.app/</a></p>
+
+        <p style="margin-top: 32px;">
+          <a href="mailto:bendaooud@gmail.com?subject=Pet%20Care%20Passport%20Account%20Deletion" class="btn-primary" style="display: inline-flex; text-decoration: none;">Request Account Deletion</a>
+        </p>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-brand-name">
+            <img src="/img/logo.png" alt="" width="32" height="32">
+            Pet Care Passport
+          </div>
+          <p>Your pet's health, organized in one simple place.</p>
+          <p style="margin-top:8px;">Bendaoud Apps</p>
+        </div>
+        <div class="footer-links">
+          <h4>Product</h4>
+          <a href="/#features">Features</a>
+          <a href="/#how-it-works">How It Works</a>
+          <a href="/#download">Download</a>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Service</a>
+          <a href="/delete-account/">Delete Account</a>
+          <a href="/contact/">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bendaoud Apps. All rights reserved.</span>
+        <span>Pet Care Passport is not a veterinary service.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var links = document.getElementById('navLinks');
+      var btn = document.querySelector('.nav-toggle');
+      var open = links.classList.toggle('open');
+      btn.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open);
+    }
+    document.querySelectorAll('.nav-links a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        document.getElementById('navLinks').classList.remove('open');
+        document.querySelector('.nav-toggle').classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
